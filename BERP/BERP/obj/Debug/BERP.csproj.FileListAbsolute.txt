@@ -1,0 +1,9 @@
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\bin\Debug\BERP.exe.config
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\bin\Debug\BERP.exe
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\bin\Debug\BERP.pdb
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.csprojResolveAssemblyReference.cache
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formHome.resources
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.Properties.Resources.resources
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.csproj.GenerateResource.Cache
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.exe
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.pdb
