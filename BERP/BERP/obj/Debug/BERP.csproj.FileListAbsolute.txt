@@ -7,3 +7,4 @@ C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.csproj.GenerateResour
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.exe
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.pdb
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formBERP.resources
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formHome.resources

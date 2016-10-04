@@ -21,5 +21,14 @@ namespace BERP
         {
             Application.Exit();
         }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formHome formHome = new formHome();
+            // Set the Parent Form of the Child window.
+            formHome.MdiParent = this;
+            // Display the new form.
+            formHome.Show();
+        }
     }
 }
