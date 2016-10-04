@@ -39,7 +39,7 @@ namespace BERP
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HideForms();
+            //HideForms();
             // check to see if the Home form has already been initiated. If it hasn't, initiate it.
             if (frmHome == null)
             {
@@ -56,7 +56,7 @@ namespace BERP
 
         private void jobsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HideForms();
+            //HideForms();
             // check to see if the Home form has already been initiated. If it hasn't, initiate it.
             if (frmJobs == null)
             {
