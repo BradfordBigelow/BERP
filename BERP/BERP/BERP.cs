@@ -17,6 +17,21 @@ namespace BERP
             InitializeComponent();
         }
 
+        formHome frmHome;
+        formJobs frmJobs;
+
+        private void HideForms()
+        {
+            int frmCount = this.MdiChildren.Count<Form>();
+            if (frmCount > 0)
+            {
+                for (int i = 0; i < frmCount; i++)
+                {
+                    this.MdiChildren[i].Hide();
+                }
+            }
+        }
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -24,14 +39,36 @@ namespace BERP
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            formHome formHome = new formHome();
-            // Set the Parent Form of the Child window.
-            formHome.MdiParent = this;
-           
+            HideForms();
+            // check to see if the Home form has already been initiated. If it hasn't, initiate it.
+            if (frmHome == null)
+            {
+                formHome frmHome = new formHome();
+                // Set the Parent Form of the Child window.
+                frmHome.MdiParent = this;
+                // Fill the parent form and bring it to front.
+                frmHome.Dock = DockStyle.Fill;
+                frmHome.BringToFront();
+                // Display the new form.
+                frmHome.Show();
+            }
+        }
 
-            // Display the new form.
-            formHome.Show();
-
+        private void jobsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HideForms();
+            // check to see if the Home form has already been initiated. If it hasn't, initiate it.
+            if (frmJobs == null)
+            {
+                formJobs frmJobs = new formJobs();
+                // Set the Parent Form of the Child window.
+                frmJobs.MdiParent = this;
+                // Fill the parent form and bring it to front.
+                frmJobs.Dock = DockStyle.Fill;
+                frmJobs.BringToFront();
+                // Display the new form.
+                frmJobs.Show();
+            }
         }
     }
 }
