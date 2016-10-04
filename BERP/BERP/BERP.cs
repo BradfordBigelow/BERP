@@ -48,9 +48,10 @@ namespace BERP
                 frmHome.MdiParent = this;
                 // Fill the parent form and bring it to front.
                 frmHome.Dock = DockStyle.Fill;
-                frmHome.BringToFront();
                 // Display the new form.
                 frmHome.Show();
+                frmHome.WindowState = FormWindowState.Minimized;
+                frmHome.WindowState = FormWindowState.Maximized;
             }
         }
 
@@ -65,9 +66,10 @@ namespace BERP
                 frmJobs.MdiParent = this;
                 // Fill the parent form and bring it to front.
                 frmJobs.Dock = DockStyle.Fill;
-                frmJobs.BringToFront();
                 // Display the new form.
                 frmJobs.Show();
+                frmJobs.WindowState = FormWindowState.Minimized;
+                frmJobs.WindowState = FormWindowState.Maximized;
             }
         }
     }
