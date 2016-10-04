@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BERP
 {
-    public partial class formHome : Form
+    public partial class formBERP : Form
     {
-        public formHome()
+        public formBERP()
         {
             InitializeComponent();
         }
