@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelHome = new System.Windows.Forms.Label();
+            this.btnJobs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // labelHome
+            // btnJobs
             // 
-            this.labelHome.AutoSize = true;
-            this.labelHome.Location = new System.Drawing.Point(85, 114);
-            this.labelHome.Name = "labelHome";
-            this.labelHome.Size = new System.Drawing.Size(35, 13);
-            this.labelHome.TabIndex = 2;
-            this.labelHome.Text = "Home";
+            this.btnJobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJobs.Location = new System.Drawing.Point(70, 119);
+            this.btnJobs.Name = "btnJobs";
+            this.btnJobs.Size = new System.Drawing.Size(150, 50);
+            this.btnJobs.TabIndex = 3;
+            this.btnJobs.Text = "Jobs";
+            this.btnJobs.UseVisualStyleBackColor = true;
+            this.btnJobs.Click += new System.EventHandler(this.btnJobs_Click);
             // 
             // formHome
             // 
@@ -47,18 +49,17 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(975, 725);
             this.ControlBox = false;
-            this.Controls.Add(this.labelHome);
+            this.Controls.Add(this.btnJobs);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formHome";
             this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label labelHome;
+        private System.Windows.Forms.Button btnJobs;
     }
 }
