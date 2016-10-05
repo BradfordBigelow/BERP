@@ -12,6 +12,9 @@ namespace BERP
 {
     public partial class formHome : Form
     {
+        formHome frmHome;
+        formJobs frmJobs;
+
         public formHome()
         {
             InitializeComponent();

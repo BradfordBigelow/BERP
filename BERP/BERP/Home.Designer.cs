@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelHome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelHome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 97);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Home";
+            this.labelHome.AutoSize = true;
+            this.labelHome.Location = new System.Drawing.Point(85, 114);
+            this.labelHome.Name = "labelHome";
+            this.labelHome.Size = new System.Drawing.Size(35, 13);
+            this.labelHome.TabIndex = 2;
+            this.labelHome.Text = "Home";
             // 
             // formHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(975, 725);
             this.ControlBox = false;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelHome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formHome";
             this.Text = "Home";
@@ -59,6 +59,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelHome;
     }
 }

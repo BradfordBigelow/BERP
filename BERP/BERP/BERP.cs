@@ -15,13 +15,13 @@ namespace BERP
         public formBERP()
         {
             InitializeComponent();
-            homeToolStripMenuItem.PerformClick();        
+            //homeToolStripMenuItem.PerformClick();        
         }
 
         formHome frmHome;
         formJobs frmJobs;
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+                private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -58,6 +58,7 @@ namespace BERP
                 frmJobs.Dock = DockStyle.Fill;
                 // Display the new form and maximize to fill the parent MDI.
                 frmJobs.Show();
+                frmJobs.BringToFront();
                 frmJobs.WindowState = FormWindowState.Minimized;
                 frmJobs.WindowState = FormWindowState.Maximized;
             }
@@ -66,5 +67,6 @@ namespace BERP
                 frmJobs.Activate();
             }
         }
+
     }
 }
