@@ -15,22 +15,11 @@ namespace BERP
         public formBERP()
         {
             InitializeComponent();
+            homeToolStripMenuItem.PerformClick();        
         }
 
         formHome frmHome;
         formJobs frmJobs;
-
-        private void HideForms()
-        {
-            int frmCount = this.MdiChildren.Count<Form>();
-            if (frmCount > 0)
-            {
-                for (int i = 0; i < frmCount; i++)
-                {
-                    this.MdiChildren[i].Hide();
-                }
-            }
-        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {

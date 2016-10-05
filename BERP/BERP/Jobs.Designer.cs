@@ -47,6 +47,7 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.ControlBox = false;
             this.Controls.Add(this.labelJobs);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formJobs";
             this.Text = "Jobs";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
