@@ -39,37 +39,42 @@ namespace BERP
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //HideForms();
-            // check to see if the Home form has already been initiated. If it hasn't, initiate it.
-            if (frmHome == null)
+            if (Application.OpenForms.OfType<formHome>().Count() == 0)
             {
-                formHome frmHome = new formHome();
+                frmHome = new formHome();
                 // Set the Parent Form of the Child window.
                 frmHome.MdiParent = this;
                 // Fill the parent form and bring it to front.
                 frmHome.Dock = DockStyle.Fill;
-                // Display the new form.
+                // Display the new form and maximize to fill the parent MDI.
                 frmHome.Show();
                 frmHome.WindowState = FormWindowState.Minimized;
                 frmHome.WindowState = FormWindowState.Maximized;
             }
+            else
+            {
+                frmHome.Activate();
+            }
+            
         }
 
         private void jobsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //HideForms();
-            // check to see if the Home form has already been initiated. If it hasn't, initiate it.
-            if (frmJobs == null)
+            if (Application.OpenForms.OfType<formJobs>().Count() == 0)
             {
-                formJobs frmJobs = new formJobs();
+                frmJobs = new formJobs();
                 // Set the Parent Form of the Child window.
                 frmJobs.MdiParent = this;
                 // Fill the parent form and bring it to front.
                 frmJobs.Dock = DockStyle.Fill;
-                // Display the new form.
+                // Display the new form and maximize to fill the parent MDI.
                 frmJobs.Show();
                 frmJobs.WindowState = FormWindowState.Minimized;
                 frmJobs.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frmJobs.Activate();
             }
         }
     }
