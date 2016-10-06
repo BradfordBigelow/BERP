@@ -1,6 +1,6 @@
 ﻿namespace BERP
 {
-    partial class formJobs
+    partial class formCustomers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,29 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelJobs = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // labelJobs
+            // label1
             // 
-            this.labelJobs.AutoSize = true;
-            this.labelJobs.Location = new System.Drawing.Point(125, 125);
-            this.labelJobs.Name = "labelJobs";
-            this.labelJobs.Size = new System.Drawing.Size(29, 13);
-            this.labelJobs.TabIndex = 1;
-            this.labelJobs.Text = "Jobs";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(121, 137);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Customers";
             // 
-            // formJobs
+            // formCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.ControlBox = false;
-            this.Controls.Add(this.labelJobs);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "formJobs";
-            this.Text = "Jobs";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Name = "formCustomers";
+            this.Text = "Customers";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -58,6 +57,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label labelJobs;
+        private System.Windows.Forms.Label label1;
     }
 }

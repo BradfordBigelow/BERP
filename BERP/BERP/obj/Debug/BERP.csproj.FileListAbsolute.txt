@@ -9,3 +9,4 @@ C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.pdb
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formBERP.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formHome.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formJobs.resources
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formCustomers.resources

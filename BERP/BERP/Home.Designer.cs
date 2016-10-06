@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnJobs = new System.Windows.Forms.Button();
+            this.btnCustomers = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnJobs
@@ -42,6 +43,17 @@
             this.btnJobs.UseVisualStyleBackColor = true;
             this.btnJobs.Click += new System.EventHandler(this.btnJobs_Click);
             // 
+            // btnCustomers
+            // 
+            this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomers.Location = new System.Drawing.Point(70, 189);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(150, 50);
+            this.btnCustomers.TabIndex = 4;
+            this.btnCustomers.Text = "Customers/   Prospects";
+            this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
+            // 
             // formHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -49,6 +61,7 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(975, 725);
             this.ControlBox = false;
+            this.Controls.Add(this.btnCustomers);
             this.Controls.Add(this.btnJobs);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formHome";
@@ -61,5 +74,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnJobs;
+        private System.Windows.Forms.Button btnCustomers;
     }
 }

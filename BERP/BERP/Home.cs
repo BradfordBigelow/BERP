@@ -14,6 +14,7 @@ namespace BERP
     {
         //formHome frmHome;
         formJobs frmJobs;
+        formCustomers frmCustomers;
 
         public formHome()
         {
@@ -45,9 +46,35 @@ namespace BERP
                         f.Activate();
                     }
                 }
-
             }
         }
 
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<formCustomers>().Count() == 0)
+            {
+                frmCustomers = new formCustomers();
+                // Set the Parent Form of the Child window.
+                frmCustomers.MdiParent = MdiParent;
+                // Fill the parent form and bring it to front.
+                frmCustomers.Dock = DockStyle.Fill;
+                // Display the new form and maximize to fill the parent MDI.
+                frmCustomers.Show();
+                frmCustomers.BringToFront();
+                frmCustomers.WindowState = FormWindowState.Minimized;
+                frmCustomers.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                foreach (Form f in Application.OpenForms)
+                {
+                    if (f.GetType() == typeof(formCustomers))
+                    {
+
+                        f.Activate();
+                    }
+                }
+            }
+        }
     }
 }

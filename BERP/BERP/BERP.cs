@@ -14,18 +14,17 @@ namespace BERP
     {
         public formBERP()
         {
-            InitializeComponent();
-            //homeToolStripMenuItem.PerformClick();        
+            InitializeComponent();      
         }
 
         formHome frmHome;
         formJobs frmJobs;
+        formCustomers frmCustomers;
 
-                private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<formHome>().Count() == 0)
@@ -46,7 +45,6 @@ namespace BERP
             }
             
         }
-
         private void jobsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<formJobs>().Count() == 0)
@@ -67,6 +65,25 @@ namespace BERP
                 frmJobs.Activate();
             }
         }
-
+        private void customersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<formCustomers>().Count() == 0)
+            {
+                frmCustomers = new formCustomers();
+                // Set the Parent Form of the Child window.
+                frmCustomers.MdiParent = this;
+                // Fill the parent form and bring it to front.
+                frmCustomers.Dock = DockStyle.Fill;
+                // Display the new form and maximize to fill the parent MDI.
+                frmCustomers.Show();
+                frmCustomers.BringToFront();
+                frmCustomers.WindowState = FormWindowState.Minimized;
+                frmCustomers.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frmCustomers.Activate();
+            }
+        }
     }
 }
