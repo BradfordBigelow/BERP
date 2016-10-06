@@ -15,6 +15,7 @@ namespace BERP
         //formHome frmHome;
         formJobs frmJobs;
         formCustomers frmCustomers;
+        formTitle frmTitle;
 
         public formHome()
         {
@@ -26,11 +27,8 @@ namespace BERP
             if (Application.OpenForms.OfType<formJobs>().Count() == 0)
             {
                 frmJobs = new formJobs();
-                // Set the Parent Form of the Child window.
                 frmJobs.MdiParent = MdiParent;
-                // Fill the parent form and bring it to front.
                 frmJobs.Dock = DockStyle.Fill;
-                // Display the new form and maximize to fill the parent MDI.
                 frmJobs.Show();
                 frmJobs.BringToFront();
                 frmJobs.WindowState = FormWindowState.Minimized;
@@ -66,14 +64,31 @@ namespace BERP
             }
             else
             {
-                foreach (Form f in Application.OpenForms)
-                {
-                    if (f.GetType() == typeof(formCustomers))
-                    {
+                foreach (Form f in Application.OpenForms) {if (f.GetType() == typeof(formCustomers)) {f.Activate();}}
+            }
+        }
 
-                        f.Activate();
-                    }
+        private void btnTitle_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<formTitle>().Count() == 0)
+            {
+                frmTitle = new formTitle();
+                // Set the Parent Form of the Child window.
+                frmTitle.MdiParent = MdiParent;
+                // Fill the parent form and bring it to front.
+                frmTitle.Dock = DockStyle.Fill;
+                // Display the new form and maximize to fill the parent MDI.
+                frmTitle.Show();
+                frmTitle.BringToFront();
+                frmTitle.WindowState = FormWindowState.Minimized;
+                frmTitle.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                {
+                    foreach (Form f in Application.OpenForms) { if (f.GetType() == typeof(formTitle)) { f.Activate(); } }
                 }
+
             }
         }
     }

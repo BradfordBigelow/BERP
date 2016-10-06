@@ -20,6 +20,7 @@ namespace BERP
         formHome frmHome;
         formJobs frmJobs;
         formCustomers frmCustomers;
+        formTitle frmTitle;
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -30,11 +31,8 @@ namespace BERP
             if (Application.OpenForms.OfType<formHome>().Count() == 0)
             {
                 frmHome = new formHome();
-                // Set the Parent Form of the Child window.
                 frmHome.MdiParent = this;
-                // Fill the parent form and bring it to front.
                 frmHome.Dock = DockStyle.Fill;
-                // Display the new form and maximize to fill the parent MDI.
                 frmHome.Show();
                 frmHome.WindowState = FormWindowState.Minimized;
                 frmHome.WindowState = FormWindowState.Maximized;
@@ -50,11 +48,8 @@ namespace BERP
             if (Application.OpenForms.OfType<formJobs>().Count() == 0)
             {
                 frmJobs = new formJobs();
-                // Set the Parent Form of the Child window.
                 frmJobs.MdiParent = this;
-                // Fill the parent form and bring it to front.
                 frmJobs.Dock = DockStyle.Fill;
-                // Display the new form and maximize to fill the parent MDI.
                 frmJobs.Show();
                 frmJobs.BringToFront();
                 frmJobs.WindowState = FormWindowState.Minimized;
@@ -70,11 +65,8 @@ namespace BERP
             if (Application.OpenForms.OfType<formCustomers>().Count() == 0)
             {
                 frmCustomers = new formCustomers();
-                // Set the Parent Form of the Child window.
                 frmCustomers.MdiParent = this;
-                // Fill the parent form and bring it to front.
                 frmCustomers.Dock = DockStyle.Fill;
-                // Display the new form and maximize to fill the parent MDI.
                 frmCustomers.Show();
                 frmCustomers.BringToFront();
                 frmCustomers.WindowState = FormWindowState.Minimized;
@@ -83,6 +75,24 @@ namespace BERP
             else
             {
                 frmCustomers.Activate();
+            }
+        }
+
+        private void titleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<formTitle>().Count() == 0)
+            {
+                frmTitle = new formTitle();
+                frmTitle.MdiParent = this;
+                frmTitle.Dock = DockStyle.Fill;
+                frmTitle.Show();
+                frmTitle.BringToFront();
+                frmTitle.WindowState = FormWindowState.Minimized;
+                frmTitle.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frmTitle.Activate();
             }
         }
     }
