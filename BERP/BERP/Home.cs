@@ -22,6 +22,8 @@ namespace BERP
             InitializeComponent();
         }
         
+
+
         private void btnJobs_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<formJobs>().Count() == 0)
@@ -36,14 +38,7 @@ namespace BERP
             }
             else
             {
-                foreach (Form f in Application.OpenForms)
-                {
-                    if (f.GetType() == typeof(formJobs))
-                    {
-
-                        f.Activate();
-                    }
-                }
+                    formBERP.reopenTheForm(typeof(formJobs));
             }
         }
 
@@ -64,7 +59,7 @@ namespace BERP
             }
             else
             {
-                foreach (Form f in Application.OpenForms) {if (f.GetType() == typeof(formCustomers)) {f.Activate();}}
+                formBERP.reopenTheForm(typeof(formCustomers));
             }
         }
 
@@ -85,10 +80,7 @@ namespace BERP
             }
             else
             {
-                {
-                    foreach (Form f in Application.OpenForms) { if (f.GetType() == typeof(formTitle)) { f.Activate(); } }
-                }
-
+                    formBERP.reopenTheForm(typeof(formTitle));
             }
         }
     }

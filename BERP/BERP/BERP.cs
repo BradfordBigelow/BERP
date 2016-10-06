@@ -12,6 +12,7 @@ namespace BERP
 {
     public partial class formBERP : Form
     {
+
         public formBERP()
         {
             InitializeComponent();      
@@ -22,10 +23,20 @@ namespace BERP
         formCustomers frmCustomers;
         formTitle frmTitle;
 
+        public static void reopenTheForm(Type t)
+        {
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.GetType() == t)
+                    f.Activate();
+            }
+        }
+
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms.OfType<formHome>().Count() == 0)

@@ -86,7 +86,6 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 75);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Customers/   Prospects";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -99,7 +98,6 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 75);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Jobs";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -111,7 +109,6 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(200, 75);
             this.button3.TabIndex = 10;
-            this.button3.Text = "Customers/   Prospects";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -124,7 +121,6 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 75);
             this.button4.TabIndex = 9;
-            this.button4.Text = "Jobs";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -136,7 +132,6 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(200, 75);
             this.button5.TabIndex = 8;
-            this.button5.Text = "Customers/   Prospects";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -149,7 +144,6 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(200, 75);
             this.button6.TabIndex = 7;
-            this.button6.Text = "Jobs";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -161,7 +155,6 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(200, 75);
             this.button7.TabIndex = 18;
-            this.button7.Text = "Customers/   Prospects";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -174,7 +167,6 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(200, 75);
             this.button8.TabIndex = 17;
-            this.button8.Text = "Jobs";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button9
@@ -186,7 +178,6 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(200, 75);
             this.button9.TabIndex = 16;
-            this.button9.Text = "Customers/   Prospects";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button10
@@ -199,7 +190,6 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(200, 75);
             this.button10.TabIndex = 15;
-            this.button10.Text = "Jobs";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button11
@@ -211,7 +201,6 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(200, 75);
             this.button11.TabIndex = 14;
-            this.button11.Text = "Customers/   Prospects";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button12
@@ -224,7 +213,6 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(200, 75);
             this.button12.TabIndex = 13;
-            this.button12.Text = "Jobs";
             this.button12.UseVisualStyleBackColor = true;
             // 
             // button13
@@ -236,7 +224,6 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(200, 75);
             this.button13.TabIndex = 12;
-            this.button13.Text = "Customers/   Prospects";
             this.button13.UseVisualStyleBackColor = true;
             // 
             // button14
@@ -249,7 +236,6 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(200, 75);
             this.button14.TabIndex = 11;
-            this.button14.Text = "Jobs";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // button15
@@ -261,7 +247,6 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(200, 75);
             this.button15.TabIndex = 26;
-            this.button15.Text = "Customers/   Prospects";
             this.button15.UseVisualStyleBackColor = true;
             // 
             // button16
@@ -274,7 +259,6 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(200, 75);
             this.button16.TabIndex = 25;
-            this.button16.Text = "Jobs";
             this.button16.UseVisualStyleBackColor = true;
             // 
             // button17
@@ -286,7 +270,6 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(200, 75);
             this.button17.TabIndex = 24;
-            this.button17.Text = "Customers/   Prospects";
             this.button17.UseVisualStyleBackColor = true;
             // 
             // button18
@@ -299,7 +282,6 @@
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(200, 75);
             this.button18.TabIndex = 23;
-            this.button18.Text = "Jobs";
             this.button18.UseVisualStyleBackColor = true;
             // 
             // button19
@@ -311,7 +293,6 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(200, 75);
             this.button19.TabIndex = 22;
-            this.button19.Text = "Customers/   Prospects";
             this.button19.UseVisualStyleBackColor = true;
             // 
             // button20
@@ -324,7 +305,6 @@
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(200, 75);
             this.button20.TabIndex = 21;
-            this.button20.Text = "Jobs";
             this.button20.UseVisualStyleBackColor = true;
             // 
             // button21
@@ -336,7 +316,6 @@
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(200, 75);
             this.button21.TabIndex = 20;
-            this.button21.Text = "Customers/   Prospects";
             this.button21.UseVisualStyleBackColor = true;
             // 
             // button22
@@ -349,7 +328,6 @@
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(200, 75);
             this.button22.TabIndex = 19;
-            this.button22.Text = "Jobs";
             this.button22.UseVisualStyleBackColor = true;
             // 
             // button23
@@ -361,7 +339,6 @@
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(200, 75);
             this.button23.TabIndex = 34;
-            this.button23.Text = "Customers/   Prospects";
             this.button23.UseVisualStyleBackColor = true;
             // 
             // button24
@@ -374,7 +351,6 @@
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(200, 75);
             this.button24.TabIndex = 33;
-            this.button24.Text = "Jobs";
             this.button24.UseVisualStyleBackColor = true;
             // 
             // button25
@@ -386,7 +362,6 @@
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(200, 75);
             this.button25.TabIndex = 32;
-            this.button25.Text = "Customers/   Prospects";
             this.button25.UseVisualStyleBackColor = true;
             // 
             // button26
@@ -399,7 +374,6 @@
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(200, 75);
             this.button26.TabIndex = 31;
-            this.button26.Text = "Jobs";
             this.button26.UseVisualStyleBackColor = true;
             // 
             // button27
@@ -411,7 +385,6 @@
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(200, 75);
             this.button27.TabIndex = 30;
-            this.button27.Text = "Customers/   Prospects";
             this.button27.UseVisualStyleBackColor = true;
             // 
             // button28
@@ -424,7 +397,6 @@
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(200, 75);
             this.button28.TabIndex = 29;
-            this.button28.Text = "Jobs";
             this.button28.UseVisualStyleBackColor = true;
             // 
             // button29
@@ -436,7 +408,6 @@
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(200, 75);
             this.button29.TabIndex = 28;
-            this.button29.Text = "Customers/   Prospects";
             this.button29.UseVisualStyleBackColor = true;
             // 
             // button30
@@ -449,7 +420,6 @@
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(200, 75);
             this.button30.TabIndex = 27;
-            this.button30.Text = "Jobs";
             this.button30.UseVisualStyleBackColor = true;
             // 
             // btnTitle
