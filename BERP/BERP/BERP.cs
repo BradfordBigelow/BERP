@@ -23,19 +23,21 @@ namespace BERP
         formCustomers frmCustomers;
         formTitle frmTitle;
 
-        public static void reopenTheForm(Type t)
+        public static void reopenTheForm(Type t) 
+            /* callable from any class, this common code reopens forms of type t that are already open. 
+             * Programmatically, we limit only one instance of any given form type.
+             * I'm finding that from within this BERP class, the command [objectname].Activate() works
+             * From other classes this code must be used. 
+             * So I'm creating it as a callable method here to avoid repeating the code everywhere else.
+             */
         {
             foreach (Form f in Application.OpenForms)
-            {
-                if (f.GetType() == t)
-                    f.Activate();
-            }
+            { if (f.GetType() == t) f.Activate(); }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+            // quit the app
+        { Application.Exit(); }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
