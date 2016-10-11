@@ -70,7 +70,7 @@ namespace BERP
             }
             else
             {
-                frmJobs.Activate();
+                reopenTheForm(typeof(formJobs));
             }
         }
         private void customersToolStripMenuItem_Click(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace BERP
             }
             else
             {
-                frmCustomers.Activate();
+                reopenTheForm(typeof(formCustomers));
             }
         }
 
@@ -105,7 +105,7 @@ namespace BERP
             }
             else
             {
-                frmTitle.Activate();
+                reopenTheForm(typeof(formTitle));
             }
         }
     }
