@@ -52,11 +52,6 @@
     <Compile Include="BERP.Designer.cs">
       <DependentUpon>BERP.cs</DependentUpon>
     </Compile>
-    <Compile Include="BERPDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BERPDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BERPDataSetCustomer.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,6 +79,12 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jobs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +108,9 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Jobs.resx">
       <DependentUpon>Jobs.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,17 +127,6 @@
     <EmbeddedResource Include="Title.resx">
       <DependentUpon>Title.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BERPDataSet.xsc">
-      <DependentUpon>BERPDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BERPDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BERPDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BERPDataSet.xss">
-      <DependentUpon>BERPDataSet.xsd</DependentUpon>
-    </None>
     <None Include="BERPDataSetCustomer.xsc">
       <DependentUpon>BERPDataSetCustomer.xsd</DependentUpon>
     </None>

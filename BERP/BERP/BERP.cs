@@ -23,6 +23,7 @@ namespace BERP
         formJobs frmJobs;
         formCustomers frmCustomers;
         formTitle frmTitle;
+        formInventory frmInventory;
 
         public static void reopenTheForm(Type t) 
         {
@@ -108,6 +109,24 @@ namespace BERP
             else
             {
                 reopenTheForm(typeof(formTitle));
+            }
+        }
+
+        private void inventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<formInventory>().Count() == 0)
+            {
+                frmInventory = new formInventory();
+                frmInventory.MdiParent = this;
+                frmInventory.Dock = DockStyle.Fill;
+                frmInventory.Show();
+                frmInventory.BringToFront();
+                frmInventory.WindowState = FormWindowState.Minimized;
+                frmInventory.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                reopenTheForm(typeof(formInventory));
             }
         }
     }

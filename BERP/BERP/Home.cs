@@ -16,6 +16,7 @@ namespace BERP
         formJobs frmJobs;
         formCustomers frmCustomers;
         formTitle frmTitle;
+        formInventory frmInventory;
 
         public formHome()
         {
@@ -81,6 +82,27 @@ namespace BERP
             else
             {
                 formBERP.reopenTheForm(typeof(formCustomers));
+            }
+        }
+
+        private void btnInventoryItems_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<formInventory>().Count() == 0)
+            {
+                frmInventory = new formInventory();
+                // Set the Parent Form of the Child window.
+                frmInventory.MdiParent = MdiParent;
+                // Fill the parent form and bring it to front.
+                frmInventory.Dock = DockStyle.Fill;
+                // Display the new form and maximize to fill the parent MDI.
+                frmInventory.Show();
+                frmInventory.BringToFront();
+                frmInventory.WindowState = FormWindowState.Minimized;
+                frmInventory.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                formBERP.reopenTheForm(typeof(formInventory));
             }
         }
     }
