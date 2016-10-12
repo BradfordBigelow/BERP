@@ -15,7 +15,8 @@ namespace BERP
 
         public formBERP()
         {
-            InitializeComponent();      
+            InitializeComponent();
+            homeToolStripMenuItem.PerformClick();  
         }
 
         formHome frmHome;
