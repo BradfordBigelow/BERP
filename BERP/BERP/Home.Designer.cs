@@ -43,7 +43,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btnCustomers = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
@@ -226,17 +226,19 @@
             this.button13.TabIndex = 12;
             this.button13.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // btnCustomers
             // 
-            this.button14.AutoSize = true;
-            this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(218, 12);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(200, 75);
-            this.button14.TabIndex = 11;
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnCustomers.AutoSize = true;
+            this.btnCustomers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCustomers.BackgroundImage")));
+            this.btnCustomers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomers.Location = new System.Drawing.Point(218, 12);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(200, 75);
+            this.btnCustomers.TabIndex = 11;
+            this.btnCustomers.Text = "Customers";
+            this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
             // button15
             // 
@@ -466,7 +468,7 @@
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button13);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.btnCustomers);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button5);
@@ -499,7 +501,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnCustomers;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
