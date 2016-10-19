@@ -12,3 +12,4 @@ C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formJobs.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formCustomers.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formTitle.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formInventory.resources
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.Login.resources

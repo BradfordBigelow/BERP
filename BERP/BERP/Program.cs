@@ -16,7 +16,7 @@ namespace BERP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formBERP());
+            Application.Run(new Login());
         }
     }
 }
