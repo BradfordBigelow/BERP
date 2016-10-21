@@ -62,7 +62,8 @@
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox1.Size = new System.Drawing.Size(244, 129);
-            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.TabIndex = 55;
+            this.richTextBox1.TabStop = false;
             this.richTextBox1.Text = "radford & Bigelow\'s\nnterprise\nesource\nlanning";
             // 
             // richTextBox2
@@ -78,7 +79,8 @@
             this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox2.Size = new System.Drawing.Size(23, 145);
-            this.richTextBox2.TabIndex = 3;
+            this.richTextBox2.TabIndex = 55;
+            this.richTextBox2.TabStop = false;
             this.richTextBox2.Text = "B\nE\nR\nP";
             // 
             // textBoxUsername
@@ -87,7 +89,7 @@
             this.textBoxUsername.Location = new System.Drawing.Point(176, 187);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(245, 29);
-            this.textBoxUsername.TabIndex = 4;
+            this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.WordWrap = false;
             // 
             // textBoxPassword
@@ -95,9 +97,9 @@
             this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(176, 222);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.PasswordChar = '&';
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(245, 29);
-            this.textBoxPassword.TabIndex = 5;
+            this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.WordWrap = false;
             // 
             // label1
@@ -128,7 +130,7 @@
             this.button1.Location = new System.Drawing.Point(456, 323);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 50);
-            this.button1.TabIndex = 8;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Clo&se";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -139,7 +141,7 @@
             this.button2.Location = new System.Drawing.Point(456, 197);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 50);
-            this.button2.TabIndex = 9;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Login";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
