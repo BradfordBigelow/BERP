@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BERP
 {
     public partial class Login : Form
     {
+        //SqlConnection sqlConnection = new SqlConnection("Data Source=BRADFORD-DB;Integrated Security=False;User ID=BERP;Password=********;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        SqlConnection sqlConnection = new SqlConnection("Data Source=BRADFORD-DB;Integrated Security=False;User ID=BERP;Password=berp;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
         public Login()
         {
             InitializeComponent();
@@ -24,7 +28,11 @@ namespace BERP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBoxUsername.Text == "" && textBoxPassword.Text == "")
+            SqlDataAdapter sqlDataAdaptor = new SqlDataAdapter("select * from [User] where UserID = '" + textBoxUsername.Text + "' and Password = '" + textBoxPassword.Text + "' ", sqlConnection);
+            DataTable dataTable = new DataTable();
+            sqlDataAdaptor.Fill(dataTable);
+
+            if (dataTable.Rows.Count == 1)
             {
                 formBERP berp = new formBERP();
                 this.Hide();
