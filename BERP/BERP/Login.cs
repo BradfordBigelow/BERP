@@ -20,14 +20,17 @@ namespace BERP
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void textBox_Password_KeyDown(object sender, KeyEventArgs e)
         {
-            Application.Exit();
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_Login_Click(this, new EventArgs());
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_Login_Click(object sender, EventArgs e)
         {
-            SqlDataAdapter sqlDataAdaptor = new SqlDataAdapter("select * from Users where UserID = '" + textBoxUsername.Text + "' and Password = '" + textBoxPassword.Text + "' ", sqlConnection);
+            SqlDataAdapter sqlDataAdaptor = new SqlDataAdapter("select * from Users where UserID = '" + textBox_Username.Text + "' and Password = '" + textBox_Password.Text + "' ", sqlConnection);
             DataTable dataTable = new DataTable();
             sqlDataAdaptor.Fill(dataTable);
 
@@ -39,8 +42,13 @@ namespace BERP
             }
             else
             {
-                MessageBox.Show("Invalid Username/Password", "ERROR",  MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                MessageBox.Show("Invalid Username/Password", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
+        }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
