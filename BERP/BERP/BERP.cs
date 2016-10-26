@@ -129,5 +129,10 @@ namespace BERP
                 reopenTheForm(typeof(formInventory));
             }
         }
+
+        private void formBERP_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

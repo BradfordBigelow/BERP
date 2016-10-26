@@ -9,7 +9,7 @@ C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.pdb
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formBERP.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formHome.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formJobs.resources
-C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formCustomers.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formTitle.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formInventory.resources
 C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.Login.resources
+C:\Users\panton\Source\Repos\BERP\BERP\BERP\obj\Debug\BERP.formCustomers.resources

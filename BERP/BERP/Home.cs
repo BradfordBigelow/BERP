@@ -60,7 +60,7 @@ namespace BERP
             }
             else
             {
-                    formBERP.reopenTheForm(typeof(formTitle));
+                formBERP.reopenTheForm(typeof(formTitle));
             }
         }
 
