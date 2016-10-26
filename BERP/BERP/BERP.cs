@@ -34,12 +34,16 @@ namespace BERP
              * So I'm creating it as a callable method here to avoid repeating the code everywhere else.
              */
             foreach (Form f in Application.OpenForms)
-            { if (f.GetType() == t) f.Activate(); }
+            {
+                if (f.GetType() == t) f.Activate();
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-            // quit the app
-        { Application.Exit(); }
+        // quit the app
+        {
+            Application.Exit();
+        }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -90,6 +90,7 @@
             this.textBox_Username.Name = "textBox_Username";
             this.textBox_Username.Size = new System.Drawing.Size(245, 29);
             this.textBox_Username.TabIndex = 1;
+            this.textBox_Username.Text = "administrator";
             this.textBox_Username.WordWrap = false;
             // 
             // textBox_Password
@@ -100,6 +101,7 @@
             this.textBox_Password.PasswordChar = '*';
             this.textBox_Password.Size = new System.Drawing.Size(245, 29);
             this.textBox_Password.TabIndex = 2;
+            this.textBox_Password.Text = "bradford";
             this.textBox_Password.WordWrap = false;
             this.textBox_Password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_Password_KeyDown);
             // 

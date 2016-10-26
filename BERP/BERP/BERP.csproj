@@ -52,11 +52,6 @@
     <Compile Include="BERP.Designer.cs">
       <DependentUpon>BERP.cs</DependentUpon>
     </Compile>
-    <Compile Include="BERPDataSetCustomer.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BERPDataSetCustomer.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BERPDataSetInventory.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -136,17 +131,6 @@
     <EmbeddedResource Include="Title.resx">
       <DependentUpon>Title.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BERPDataSetCustomer.xsc">
-      <DependentUpon>BERPDataSetCustomer.xsd</DependentUpon>
-    </None>
-    <None Include="BERPDataSetCustomer.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BERPDataSetCustomer.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BERPDataSetCustomer.xss">
-      <DependentUpon>BERPDataSetCustomer.xsd</DependentUpon>
-    </None>
     <None Include="BERPDataSetInventory.xsc">
       <DependentUpon>BERPDataSetInventory.xsd</DependentUpon>
     </None>
