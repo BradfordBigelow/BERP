@@ -13,8 +13,6 @@ namespace BERP
 {
     public partial class Login : Form
     {
-        SqlConnection sqlConnection = new SqlConnection("Data Source=BRADFORD-DB;Integrated Security=False;User ID=BERP;Password=berp;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-
         public Login()
         {
             InitializeComponent();
@@ -30,9 +28,11 @@ namespace BERP
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            SqlDataAdapter sqlDataAdaptor = new SqlDataAdapter("select * from Users where UserID = '" + textBox_Username.Text + "' and Password = '" + textBox_Password.Text + "' ", sqlConnection);
+            SQLConnectionToBERP sqlConnectionToBERP = new SQLConnectionToBERP();
+            SqlDataAdapter sqlDataAdaptorToBERP = new SqlDataAdapter("select * from Users where UserID = '" + textBox_Username.Text + "' and Password = '" + textBox_Password.Text + "' ", sqlConnectionToBERP.ActiveCon());
             DataTable dataTable = new DataTable();
-            sqlDataAdaptor.Fill(dataTable);
+           
+            sqlDataAdaptorToBERP.Fill(dataTable);
 
             if (dataTable.Rows.Count == 1)
             {
@@ -49,6 +49,11 @@ namespace BERP
         private void btn_Close_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
